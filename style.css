@@ -1,0 +1,45 @@
+:root { 
+	--main-pink-color:pink;
+	--main-black-color:black;
+	--main-purple-color:purple; 
+	--main-white-color:white;
+} 
+
+:root::after {   
+   content: "Last Content";
+   color:black;  
+} 
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.wrapper > * {
+    padding: 20px 0px; 
+}
+
+.page-header { 
+   /* 
+   background: var(--main-pink-color);
+   color: var(--main-white-color);
+   */
+}
+
+.page-main {
+   flex-grow: 1; 
+   background: var(--main-purple-color); 
+   color: var(--main-white-color);
+} 
+
+.page-footer {   
+   /* 
+   background: var(--main-purple-color);
+   color: var(--main-white-color);
+   */ 
+}
+
+q:lang(no){
+	quotes: "~" "~";
+} 
